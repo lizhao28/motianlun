@@ -1,0 +1,19 @@
+.navlist{
+    padding-top:0.18rem;
+    display: flex;
+    a{
+        i{
+            color:red;
+            font-size:0.25rem;
+            margin-bottom: 0.1rem;
+        }
+      flex-grow: 1;
+      flex-shrink: 1;
+      font-size: 0.14rem;
+      color: #5c5c5c;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+}

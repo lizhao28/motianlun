@@ -1,0 +1,65 @@
+.hotbanner{
+    padding:0.18rem;
+   
+    display: flex;
+    flex-direction:column;
+   width:100%;
+        .jinhot{
+            padding-top:0.05rem;
+            display: flex;
+            justify-content:space-between;
+            width: 100%;
+            position: relative;
+            height: 0.3rem;
+            font-size: 0.16rem;
+            span{
+                
+                font-weight: 700;
+                color:#333;
+            }
+            i{
+                font-weight: 400;
+                color: #ff1d41;
+            }
+        }
+}
+.lunbo2{
+    display: flex;
+    width: 100%;
+    img{
+        width: 1.28rem;
+        height: 1.8rem;
+    }
+  .divv{
+       width: 1.28rem;
+       i {
+           padding-top: 0.02rem;
+           color: #000;
+           font-size: 13px;
+           line-height: 0.2rem;
+           height: 0.45rem;
+           overflow: hidden;
+           text-overflow: ellipsis;
+           display: -webkit-box;
+           -webkit-box-orient: vertical;
+           -webkit-line-clamp: 2;
+       }
+       span{
+           display: block;
+               color: #95949d;
+               font-size: 9px;
+               line-height: 0.2rem;
+       }
+       em{
+             stong{
+                   font-size: 14px;
+                   font-weight: 600;
+                   color: #ff1d41;
+             }
+       }
+  }
+}
+.lubo-div{
+    margin-right: 0.4rem;
+}
+ 
