@@ -1,8 +1,12 @@
 import { combineReducers } from 'redux'
 
 import allen from './allen'
+import user from './user'
 
+const reducer = combineReducers({
+    allen,
+    user
 
-const reducer = combineReducers({allen})
+})
 
 export default reducer

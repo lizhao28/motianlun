@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
  import{Featured,Mine,Show} from './javascripts/page'
 
-
+import { connect } from 'react-redux'
 import Header from "./javascripts/Header";
 import Footer from "./javascripts/Footer";
 //路由
@@ -54,7 +54,8 @@ hasHeader(){
   }
 }
 
-export default withRouter(App);
+
+export default withRouter(connect(state=>state)(App));
 
 
 

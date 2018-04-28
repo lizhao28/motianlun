@@ -1,19 +1,25 @@
 import React,{Component} from "react"
 import "./index.scss"
-
-
+import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 class Mine extends Component{
+    componentWillMount(){
+       if(!this.props.user.username){
+           this.props.history.replace('/login')
+       }
+    }
     render(){
+
         return (
          
                 <header className="bar bar-nav">
-                    <a className="icon icon-left pull-left"></a>
+                <Link to="/" className="iconfont icon-sanjiaoxing-down"></Link>
                     <a className="icon icon-refresh pull-right"></a>
-                    <h1 className="title">标题</h1>
+                    Mine --{this.props.user.username}
                 </header>
            
         )
     }
 }
 
-export default Mine
+export default connect(state=>state)(Mine)

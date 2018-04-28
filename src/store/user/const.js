@@ -1,0 +1,7 @@
+
+
+const CHANGE_USERNAME = 'CHANGE_USERNAME'
+
+export {
+    CHANGE_USERNAME
+}
